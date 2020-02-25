@@ -25,8 +25,13 @@ public double multiplication (double x, double y)
 }
 
 /* x! */
-public int factorial (int x) 
+public double factorial (double x) 
 {
+	if (x < 0)
+	{
+		return 0;
+	}
+	
 	if (x > 1)
 	{
         return x * factorial(x - 1);
@@ -40,15 +45,29 @@ public int factorial (int x)
 /* x^y */
 public double power (double x, double y) 
 {
-	return pow(x, y);
+	if (y == 0) {
+		return 1;
+	}
+	
+	if (y < 0) {
+		return 0;
+	}
+	
+	double result;
+	for (int i = 0; i < y; i++) 
+	{
+		result *= x;
+	}
+	
+	return result;
 }
 
 /* y-th root of x */
 public double root (double x, double y)
 {
-	if (y == 0.0)
+	if (y <= 0)
 	{
-		return 0.0;
+		return 0;
 	}
 	else
 	{
