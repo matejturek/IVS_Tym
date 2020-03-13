@@ -9,7 +9,7 @@ double addition (double x, double y)
 /* x - y */
 double subtraction (double x, double y)
 {
-	return x + y;
+	return x - y;
 }
 
 /* x % y */
