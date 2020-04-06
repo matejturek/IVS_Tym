@@ -2,11 +2,13 @@
 Skupiný projekt IVS
 
 Název týmu:	Tym
+
 Seznam členů:
 1.	Kľučiar Adam	xkluci01	xturek05
 2.	Kolb Jakub	xkolbj00	xturek0
 3.	Sladký David	xsladk07	xturek05
 4.	Turek Matej	xturek05	xturek05
+
 
 Zadání
 
