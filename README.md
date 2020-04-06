@@ -1,6 +1,13 @@
 # IVS_projekt2
 Skupiný projekt IVS
 
+Název týmu:	Tym
+Seznam členů:
+1.	Kľučiar Adam	xkluci01	xturek05
+2.	Kolb Jakub	xkolbj00	xturek0
+3.	Sladký David	xsladk07	xturek05
+4.	Turek Matej	xturek05	xturek05
+
 Zadání
 
 Vytvořte kalkulačku se základními matematickými operacemi (+,-,*,/), faktoriálem, umocňováním s přirozenými exponenty (exponenty jsou přirozená čísla), obecnou odmocninou (obecná odmocnina) a jednou další funkcí.
