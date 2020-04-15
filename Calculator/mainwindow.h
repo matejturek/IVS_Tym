@@ -16,10 +16,18 @@ public:
     ~MainWindow();
 
 private:
+    enum en_operator{ none, plus, minus, divide, multiply, power, root};
     Ui::MainWindow *ui;
+    QString sum_res;
+    QString sum_tmp;
+    en_operator calc_operator;
+    bool wait_for_operator;
+    bool dot;
 
 private slots:
     void digit_pressed();
+
+    void calc(en_operator op,double x,double y);
 
     void on_pushButton_dot_released();
     void on_pushButton_equal_released();

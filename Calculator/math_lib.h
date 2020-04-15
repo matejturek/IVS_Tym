@@ -1,5 +1,9 @@
 #include <cmath>
 
+class math_lib
+{
+public:
+
 /* x + y */
 double addition (double x, double y)
 {
@@ -53,7 +57,7 @@ double power (double x, double y)
         return 0;
     }
 
-    double result;
+    double result=1;
     for (int i = 0; i < y; i++)
     {
         result *= x;
@@ -74,3 +78,4 @@ double root (double x, double y)
         return std::pow(x, 1.0/y);
     }
 }
+};
