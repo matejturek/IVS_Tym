@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>327</width>
-    <height>303</height>
+    <height>354</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,7 @@
       <x>0</x>
       <y>50</y>
       <width>81</width>
-      <height>51</height>
+      <height>101</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -80,14 +80,14 @@ QPushButton:pressed {
 }</string>
     </property>
     <property name="text">
-     <string>sqrt</string>
+     <string>2√x</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_power">
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>50</y>
+      <y>100</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -112,7 +112,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>50</y>
+      <y>100</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -137,7 +137,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>100</y>
+      <y>150</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -159,7 +159,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>100</y>
+      <y>150</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -181,7 +181,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>100</y>
+      <y>150</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -206,7 +206,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>100</y>
+      <y>150</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -228,7 +228,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>150</y>
+      <y>200</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -250,7 +250,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>150</y>
+      <y>200</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -275,7 +275,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>150</y>
+      <y>200</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -297,7 +297,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>150</y>
+      <y>200</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -319,7 +319,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>200</y>
+      <y>250</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -341,7 +341,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>200</y>
+      <y>250</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -363,7 +363,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>200</y>
+      <y>250</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -388,7 +388,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>200</y>
+      <y>250</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -410,7 +410,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>250</y>
+      <y>300</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -435,7 +435,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>250</y>
+      <y>300</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -457,7 +457,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>250</y>
+      <y>300</y>
       <width>161</width>
       <height>51</height>
      </rect>
@@ -473,6 +473,81 @@ QPushButton:pressed {
     </property>
     <property name="text">
      <string>0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_factorial">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>50</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>X!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_power_y">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>100</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>x^y</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sqrt_y">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>50</y>
+      <width>81</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+  background-color: rgb(255, 151, 57);
+  color: white; 
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+    </property>
+    <property name="text">
+     <string>y√x</string>
     </property>
    </widget>
   </widget>

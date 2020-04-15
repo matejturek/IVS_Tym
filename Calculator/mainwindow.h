@@ -16,7 +16,7 @@ public:
     ~MainWindow();
 
 private:
-    enum en_operator{ none, plus, minus, divide, multiply, power, root};
+    enum en_operator{ none, plus, minus, divide, multiply, power, powery, root, rooty, factorial};
     Ui::MainWindow *ui;
     QString sum_res;
     QString sum_tmp;
@@ -38,6 +38,10 @@ private slots:
     void on_pushButton_power_released();
     void on_pushButton_sqrt_released();
     void on_pushButton_clear_released();
+
+    void on_pushButton_power_y_released();
+    void on_pushButton_sqrt_y_released();
+    void on_pushButton_factorial_released();
 };
 
 

@@ -56,9 +56,12 @@ void MainWindow::calc(en_operator op, double x, double y)
         case plus:  res=ml.addition(x,y); break;
         case minus: res=ml.subtraction(x,y); break;
         case power: res = ml.power(x,2); break;
+        case powery: res = ml.power(x,y); break;
         case root: res = ml.root(x,2);break;
+        case rooty: res = ml.root(x,y);break;
         case divide: res= ml.division(x,y);break;
         case multiply: res = ml.multiplication(x,y); break;
+        case factorial: res = ml.factorial(x); break;
     }
     calc_operator = none;
     sum_res = QString::number(res);
@@ -168,6 +171,43 @@ void MainWindow::on_pushButton_sqrt_released()
     }
 }
 
+void MainWindow::on_pushButton_factorial_released(){
+    if(wait_for_operator==true){
+        if(calc_operator == none ){
+            sum_tmp = ui->label->text();
+            calc_operator = factorial;
+            on_pushButton_equal_released();
+        }else{
+          on_pushButton_equal_released();
+            sum_tmp = ui->label->text();
+            calc_operator = factorial;
+            on_pushButton_equal_released();
+        }
+
+    }
+}
+void MainWindow::on_pushButton_power_y_released(){
+    if(wait_for_operator==true){
+        if(calc_operator != none ){
+            on_pushButton_equal_released();
+        }else{
+            sum_tmp = ui->label->text();
+        }
+        calc_operator = powery;
+        wait_for_operator=false;
+    }
+}
+void MainWindow::on_pushButton_sqrt_y_released(){
+    if(wait_for_operator==true){
+        if(calc_operator != none ){
+            on_pushButton_equal_released();
+        }else{
+            sum_tmp = ui->label->text();
+        }
+        calc_operator = rooty;
+        wait_for_operator=false;
+    }
+}
 void MainWindow::on_pushButton_clear_released()
 {
     ui->label->clear();
