@@ -1,6 +1,5 @@
-#Custom
-*.qmake.stash
-src/Calculator/Calculator
+# Custom
+Calculator
 
 # C++ objects and libs
 *.slo
