@@ -1,0 +1,51 @@
+Termíny:
+------------
+	19.3. 	Plán
+	21.3.	Založení projektu
+	28.3.	Matematické funkce
+	4.4.	GUI
+	11.4.	Přepojení GUI s funkcemi
+	18.4.	Testování a ladění
+	22.4. 	Dokumentace
+	23.4. 	Odevzdání
+------------
+
+Úlohy:
+------------
+	Turek Matej xturek05:
+		Plán
+		Matematické funkce
+		Správa githubu
+		Dokumentace
+		README.md
+
+	Kolb Jakub xkolbj00:
+		GUI
+		Napojení GUI na funkce
+		
+	Sladký David xsladk07:
+		GUI
+		Napojení GUI na funkce
+
+	Kľučiar Adam xkluci01:
+		Inštalační balík
+		Makefile
+		Dokumentace
+		
+	Společné:´
+		Testování
+		hodnoceni.txt
+------------
+
+Komunikační kanál:
+------------
+	Github
+	Diskord - skupinová komunikace
+	Osobné setkání
+------------
+
+Správa verzí a hosting:
+------------
+	Github - přidělení ivs.kontrola@gmail.com práva pro zobrazování
+------------
+
