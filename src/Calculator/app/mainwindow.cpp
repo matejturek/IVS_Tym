@@ -63,6 +63,7 @@ void MainWindow::calc(en_operator op, double x, double y)
         case multiply: res = ml.multiplication(x,y); break;
         case factorial: res = ml.factorial(x); break;
     }
+
     calc_operator = none;
     sum_res = QString::number(res);
     sum_tmp = sum_res;
@@ -80,8 +81,14 @@ void MainWindow::on_pushButton_dot_released()
 void MainWindow::on_pushButton_equal_released()
 {
     if(wait_for_operator == true){
-        calc(calc_operator,sum_tmp.toDouble(),ui->label->text().toDouble());
+        try{
+            calc(calc_operator,sum_tmp.toDouble(),ui->label->text().toDouble());
+        }catch(std::logic_error e){
+            ui->label->setText(e.what());
+            return;
+        }
         ui->label->setText(sum_res);
+        calc_operator = none;
     }
 }
 

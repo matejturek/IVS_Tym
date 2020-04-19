@@ -16,9 +16,12 @@ double subtraction (double x, double y)
     return x - y;
 }
 
-/* x % y */
+/* x / y */
 double division (double x, double y)
 {
+    if(y==0){
+        throw std::logic_error("Nelze dělit 0");
+    }
     return x / y;
 }
 
@@ -35,7 +38,9 @@ double factorial (double x)
     {
         return 0;
     }
-
+    if(x > 160){
+        throw std::logic_error("Velké číslo na faktorial");
+    }
     if (x > 1)
     {
         return x * factorial(x - 1);
