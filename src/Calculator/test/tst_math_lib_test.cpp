@@ -1,7 +1,11 @@
+/**
+  * @file tst_math_lib_test.cpp
+  * @author David Sladký
+  * @brief Test class for math_lib.
+  */
+
 #include <QtTest>
 #include "math_lib.h"
-
-// add necessary includes here
 
 class math_lib_test : public QObject
 {
@@ -279,3 +283,5 @@ void math_lib_test::root5()
 QTEST_APPLESS_MAIN(math_lib_test)
 
 #include "tst_math_lib_test.moc"
+
+/*** End of file tst_math_lib_test.cpp */
