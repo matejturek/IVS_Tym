@@ -1,24 +1,17 @@
-#include <cmath>
-#include <stdexcept>
+#include "math_lib.h"
 
-class math_lib
-{
-public:
-
-/* x + y */
-double addition (double x, double y)
+double math_lib::addition (double x, double y)
 {
     return x + y;
 }
 
-/* x - y */
-double subtraction (double x, double y)
+double math_lib::subtraction (double x, double y)
 {
     return x - y;
 }
 
 /* x / y */
-double division (double x, double y)
+double math_lib::division (double x, double y)
 {
     if(y==0){
         throw std::logic_error("Nelze dělit 0");
@@ -27,13 +20,13 @@ double division (double x, double y)
 }
 
 /* x * y */
-double multiplication (double x, double y)
+double math_lib::multiplication (double x, double y)
 {
     return x * y;
 }
 
 /* x! */
-double factorial (double x)
+double math_lib::factorial (double x)
 {
     if (x < 0)
     {
@@ -53,7 +46,7 @@ double factorial (double x)
 }
 
 /* x^y */
-double power (double x, double y)
+double math_lib::power (double x, double y)
 {
     if (y == 0) {
         return 1;
@@ -73,7 +66,7 @@ double power (double x, double y)
 }
 
 /* y-th root of x */
-double root (double x, double y)
+double math_lib::root (double x, double y)
 {
     if (y <= 0)
     {
@@ -84,4 +77,3 @@ double root (double x, double y)
         return std::pow(x, 1.0/y);
     }
 }
-};
