@@ -1,4 +1,4 @@
-xkluci01 100 (GUI, functions)
+xkluci01 100 
 xkolbj00 100 (GUI, functions)
 xsladk07 100 (profiling, makefile, testy)
-xturek0 100
+xturek0 100 (GUI, functions)
