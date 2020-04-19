@@ -1,0 +1,4 @@
+xkluci01 100
+xkolbj00 100
+xsladk07 100 (profiling, makefile, testy)
+xturek0 100
