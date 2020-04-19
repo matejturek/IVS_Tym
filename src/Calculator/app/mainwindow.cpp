@@ -85,6 +85,7 @@ void MainWindow::on_pushButton_equal_released()
             calc(calc_operator,sum_tmp.toDouble(),ui->label->text().toDouble());
         }catch(std::logic_error e){
             ui->label->setText(e.what());
+            calc_operator = none;
             return;
         }
         ui->label->setText(sum_res);
