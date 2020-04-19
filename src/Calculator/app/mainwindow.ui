@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>327</width>
-    <height>354</height>
+    <width>321</width>
+    <height>341</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>6</x>
-      <y>6</y>
-      <width>311</width>
+      <x>0</x>
+      <y>0</y>
+      <width>321</width>
       <height>41</height>
      </rect>
     </property>
@@ -37,7 +37,7 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>50</y>
+      <y>40</y>
       <width>81</width>
       <height>101</height>
      </rect>
@@ -62,7 +62,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>50</y>
+      <y>40</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -87,7 +87,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>100</y>
+      <y>90</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -112,7 +112,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>100</y>
+      <y>90</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -137,7 +137,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>150</y>
+      <y>140</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -159,7 +159,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>150</y>
+      <y>140</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -181,7 +181,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>150</y>
+      <y>140</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -206,7 +206,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>150</y>
+      <y>140</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -228,7 +228,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>200</y>
+      <y>190</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -250,7 +250,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>200</y>
+      <y>190</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -275,7 +275,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>200</y>
+      <y>190</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -297,7 +297,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>200</y>
+      <y>190</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -319,7 +319,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>250</y>
+      <y>240</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -341,7 +341,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>250</y>
+      <y>240</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -363,7 +363,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>250</y>
+      <y>240</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -388,7 +388,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>250</y>
+      <y>240</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -410,7 +410,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>300</y>
+      <y>290</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -435,7 +435,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>300</y>
+      <y>290</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -457,7 +457,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>300</y>
+      <y>290</y>
       <width>161</width>
       <height>51</height>
      </rect>
@@ -479,7 +479,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>50</y>
+      <y>40</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -504,7 +504,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>80</x>
-      <y>100</y>
+      <y>90</y>
       <width>81</width>
       <height>51</height>
      </rect>
@@ -529,7 +529,7 @@ QPushButton:pressed {
     <property name="geometry">
      <rect>
       <x>160</x>
-      <y>50</y>
+      <y>40</y>
       <width>81</width>
       <height>51</height>
      </rect>

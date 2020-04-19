@@ -21,6 +21,17 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButton_8, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_9, SIGNAL(released()), this, SLOT(digit_pressed()));
 
+    ui->pushButton_plus->setToolTip("Sčítání");
+    ui->pushButton_minus->setToolTip("Odečítání");
+    ui->pushButton_divide->setToolTip("Dělení");
+    ui->pushButton_multiply->setToolTip("násobení");
+    ui->pushButton_factorial->setToolTip("Faktorial");
+    ui->pushButton_power->setToolTip("Druhá mocnina");
+    ui->pushButton_power_y->setToolTip("Mocnina");
+    ui->pushButton_sqrt->setToolTip("Druhá odmocnina");
+    ui->pushButton_sqrt_y->setToolTip("Odmocnina");
+    ui->pushButton_clear->setToolTip("Vymazání");
+    ui->pushButton_equal->setToolTip("Vyhodnotit");
 }
 
 MainWindow::~MainWindow()
