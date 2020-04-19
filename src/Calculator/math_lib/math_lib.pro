@@ -1,7 +1,9 @@
 QT -= gui
 
-CONFIG += c++11 console
-CONFIG -= app_bundle
+TEMPLATE = lib
+CONFIG += staticlib
+
+CONFIG += c++11
 
 # The following define makes your compiler emit warnings if you use
 # any Qt feature that has been marked deprecated (the exact warnings
@@ -15,24 +17,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-        main.cpp
+    math_lib.cpp
 
-LIBS +=
-
-QMAKE_CXXFLAGS += -g
-QMAKE_CXXFLAGS += -pg
-QMAKE_CXXFLAGS += -Wall
-QMAKE_CXXFLAGS += -Wextra
+HEADERS += \
+    math_lib.h
 
 # Default rules for deployment.
-qnx: target.path = /tmp/$${TARGET}/bin
-else: unix:!android: target.path = /opt/$${TARGET}/bin
+unix {
+    target.path = $$[QT_INSTALL_PLUGINS]/generic
+}
 !isEmpty(target.path): INSTALLS += target
-
-
-unix:!macx: LIBS += -L$$OUT_PWD/../math_lib/ -lmath_lib
-
-INCLUDEPATH += $$PWD/../math_lib
-DEPENDPATH += $$PWD/../math_lib
-
-unix:!macx: PRE_TARGETDEPS += $$OUT_PWD/../math_lib/libmath_lib.a

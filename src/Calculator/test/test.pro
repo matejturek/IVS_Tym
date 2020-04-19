@@ -8,4 +8,11 @@ TEMPLATE = app
 
 SOURCES +=  tst_math_lib_test.cpp
 
-HEADERS += ../app/math_lib.h
+LIBS +=
+
+unix:!macx: LIBS += -L$$OUT_PWD/../math_lib/ -lmath_lib
+
+INCLUDEPATH += $$PWD/../math_lib
+DEPENDPATH += $$PWD/../math_lib
+
+unix:!macx: PRE_TARGETDEPS += $$OUT_PWD/../math_lib/libmath_lib.a

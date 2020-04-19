@@ -2,6 +2,7 @@
 app
 test
 profiling
+*/**/.qmake.stash
 
 # C++ objects and libs
 *.slo

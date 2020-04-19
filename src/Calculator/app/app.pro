@@ -20,13 +20,21 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    mainwindow.h \
-    math_lib.h
+    mainwindow.h
 
 FORMS += \
     mainwindow.ui
+
+LIBS +=
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+unix:!macx: LIBS += -L$$OUT_PWD/../math_lib/ -lmath_lib
+
+INCLUDEPATH += $$PWD/../math_lib
+DEPENDPATH += $$PWD/../math_lib
+
+unix:!macx: PRE_TARGETDEPS += $$OUT_PWD/../math_lib/libmath_lib.a

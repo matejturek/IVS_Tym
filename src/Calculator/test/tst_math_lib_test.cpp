@@ -1,5 +1,5 @@
 #include <QtTest>
-#include "../app/math_lib.h"
+#include "math_lib.h"
 
 // add necessary includes here
 

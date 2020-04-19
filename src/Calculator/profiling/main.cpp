@@ -7,7 +7,7 @@
 #include <vector>
 #include <iostream>
 
-#include "../app/math_lib.h"
+#include "math_lib.h"
 
 int main()
 {
