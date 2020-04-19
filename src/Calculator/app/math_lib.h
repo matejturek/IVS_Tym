@@ -1,4 +1,5 @@
 #include <cmath>
+#include <stdexcept>
 
 class math_lib
 {
