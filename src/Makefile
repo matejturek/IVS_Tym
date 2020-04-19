@@ -1,17 +1,34 @@
-.PHONY: all pack clean test doc run profile compile-program compile-profile
+.PHONY: all pack clean test doc run profile app-compile profile-compile test-compile profile-run
 
 PROJ-NAME = Calculator
+APP = app
+TEST = test
+PROF = profiling
 
-all: compile-program compile-profile
+all: app-compile test-compile profile-compile
 
-compile-program:
-	cd $(PROJ-NAME) && qmake -qt=qt5 $(PROJ-name).pro && make
+profile: profile-compile
+
+test: test-compile
+	cd $(PROJ-NAME)/$(TEST) && ./$(TEST)
+
+doc:
+	echo 'TO DO doc'
+
+app-compile:
+	cd $(PROJ-NAME)/$(APP) && qmake -qt=qt5 $(APP).pro && make
+
+test-compile: $(PROJ-NAME)/$(TEST)/tst_math_lib_test.cpp
+	cd $(PROJ-NAME)/$(TEST) && qmake -qt=qt5 $(TEST).pro && make
+
+profile-compile: $(PROJ-NAME)/$(PROF)/main.cpp
+	cd $(PROJ-NAME)/$(PROF) && g++ -Wall -Wextra -g -pg ./main.cpp -o $(PROF)
 
 run:
-	cd $(PROJ-NAME) && ./$(PROJ-NAME)
+	cd $(PROJ-NAME)/$(APP) && ./$(APP)
 
 pack: clean
-	echo "to do pack"
+	cd ../.. && zip -r xturek05 doc install repo
 
 clean:
-		echo "to do clean"
+	git clean -xdf && rm -f ../../xturek05
