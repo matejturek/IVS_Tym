@@ -1,11 +1,12 @@
-.PHONY: all pack clean test doc run profile app-compile profile-compile test-compile profile-run
+.PHONY: all pack clean test doc run profile app-compile profile-compile test-compile profile-run math_lib-compile
 
 PROJ-NAME = Calculator
 APP = app
 TEST = test
 PROF = profiling
+MATH = math_lib
 
-all: app-compile test-compile profile-compile
+all: math_lib-compile app-compile test-compile profile-compile
 
 profile: profile-compile
 
@@ -15,14 +16,18 @@ test: test-compile
 doc:
 	echo 'TO DO doc'
 
-app-compile:
+app-compile: math_lib-compile
 	cd $(PROJ-NAME)/$(APP) && qmake -qt=qt5 $(APP).pro && make
 
-test-compile: $(PROJ-NAME)/$(TEST)/tst_math_lib_test.cpp
+test-compile: math_lib-compile $(PROJ-NAME)/$(TEST)/tst_math_lib_test.cpp
 	cd $(PROJ-NAME)/$(TEST) && qmake -qt=qt5 $(TEST).pro && make
 
-profile-compile: $(PROJ-NAME)/$(PROF)/main.cpp
-	cd $(PROJ-NAME)/$(PROF) && g++ -Wall -Wextra -g -pg ./main.cpp -o $(PROF)
+profile-compile: math_lib-compile $(PROJ-NAME)/$(PROF)/main.cpp
+	cd $(PROJ-NAME)/$(PROF) && qmake -qt=qt5 $(PROF).pro && make
+	#cd $(PROJ-NAME)/$(PROF) && g++ -Wall -Wextra -g -pg ./main.cpp -o $(PROF)
+
+math_lib-compile: $(PROJ-NAME)/$(MATH)/$(MATH).cpp $(PROJ-NAME)/$(MATH)/$(MATH).h
+	cd $(PROJ-NAME)/$(MATH) && qmake -qt=qt5 $(MATH).pro && make
 
 run:
 	cd $(PROJ-NAME)/$(APP) && ./$(APP)
