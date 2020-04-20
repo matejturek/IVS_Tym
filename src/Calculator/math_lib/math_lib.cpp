@@ -1,17 +1,17 @@
 /**
   * @file math_lib.cpp
   * @author Jakub Kolb, Matej Turek
-  * @brief Matematické funkce programu
+  * @brief Math functions
   */
 
 #include "math_lib.h"
 
 /**
-   * Funkce součtu 
+   * Addition 
    *
-   * @param x První číslo operace
-   * @param y Druhé číslo operace
-   * @return Vraci x + y
+   * @param x First number
+   * @param y Second number
+   * @return returns x + y
    */
 
 
@@ -22,23 +22,24 @@ double math_lib::addition (double x, double y)
 
 
 /**
-   * Funkce rozdílu 
+   * Substraction 
    *
-   * @param x První číslo operace
-   * @param y Druhé číslo operace
-   * @return Vraci x - y
+   * @param x First number
+   * @param y Second number
+   * @return returns x - y
    */
+
 double math_lib::subtraction (double x, double y)
 {
     return x - y;
 }
 
 /**
-   * Funkce dělení 
+   * Division 
    *
-   * @param x První číslo operace
-   * @param y Druhé číslo operace
-   * @return Vraci x / y
+   * @param x First number
+   * @param y Second number
+   * @return returns x / y
    */
 
 double math_lib::division (double x, double y)
@@ -49,24 +50,25 @@ double math_lib::division (double x, double y)
     return x / y;
 }
 
-/**
-   * Funkce násobené 
-   *
-   * @param x První číslo operace
-   * @param y Druhé číslo operace
-   * @return Vraci x * y
-   */
 
+/**
+   * Multiplication 
+   *
+   * @param x First number
+   * @param y Second number
+   * @return returns x * y
+   */
 double math_lib::multiplication (double x, double y)
 {
     return x * y;
 }
 
+
 /**
-   * Funkce faktorial 
+   * Factorial 
    *
-   * @param x První číslo operace
-   * @return Vraci x!
+   * @param x First number
+   * @return returns x!
    */
 
 double math_lib::factorial (double x)
@@ -90,11 +92,11 @@ double math_lib::factorial (double x)
 
 
 /**
-   * Funkce mocnina 
+   * Power
    *
-   * @param x První číslo operace
-   * @param y Druhé číslo operace
-   * @return Vraci x^y
+   * @param x First number
+   * @param y Second number
+   * @return returns x^y
    */
 
 double math_lib::power (double x, double y)
@@ -116,14 +118,14 @@ double math_lib::power (double x, double y)
     return result;
 }
 
-
 /**
-   * Funkce odmocnina 
+   * Root
    *
-   * @param x První číslo operace
-   * @param y Druhé číslo operace
-   * @return Vraci x sqrt(y)
+   * @param x First number
+   * @param y Second number
+   * @return returns y sqrt(x}y
    */
+
 
 double math_lib::root (double x, double y)
 {
