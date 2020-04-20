@@ -1,3 +1,10 @@
+/**
+  * @file mainwindow.cpp
+  * @author Jakub Kolb, Matej Turek
+  * @brief Hlavní okno programu
+  */
+
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "math_lib.h"
@@ -41,6 +48,9 @@ MainWindow::~MainWindow()
     calc_operator = none;
     dot = false;
 }
+ /**
+   * Metoda obsluhu tlačítek po stisknutí. Podle aktuálního stavu mění stav displayu (vyčistí nebo vypisuje čísla) 
+   */
 
 void MainWindow::digit_pressed()
 {
@@ -57,7 +67,15 @@ void MainWindow::digit_pressed()
     dot = false;
 }
 
-//TODO:
+ /**
+   * Metoda výpočtu. Podle zvolené operace zavolá operaci na výpočet výsledku. Výsledek náledně vypíše na display. 
+   *
+   * @param op Zvolená operace (například součet, rozdíl, ...)
+   * @param x První číslo operace
+   * @param y Druhý číslo operace
+   */
+
+
 void MainWindow::calc(en_operator op, double x, double y)
 {
     math_lib ml;
@@ -79,6 +97,12 @@ void MainWindow::calc(en_operator op, double x, double y)
     sum_res = QString::number(res);
     sum_tmp = sum_res;
 }
+
+
+ /**
+   * Metoda obsluhu tlačítka po stiskntí desetinný čárky. 
+   */
+
 void MainWindow::on_pushButton_dot_released()
 {
     if (!ui->label->text().contains(".")){
@@ -88,6 +112,11 @@ void MainWindow::on_pushButton_dot_released()
     }
 
 }
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí výpočtu. 
+   */
+
 
 void MainWindow::on_pushButton_equal_released()
 {
@@ -104,6 +133,11 @@ void MainWindow::on_pushButton_equal_released()
     }
 }
 
+/**
+   * Metoda obsluhu tlačítka po stiskntí součtu. 
+   */
+
+
 void MainWindow::on_pushButton_plus_released()
 {
     if(wait_for_operator==true){
@@ -116,6 +150,10 @@ void MainWindow::on_pushButton_plus_released()
         wait_for_operator=false;
     }
 }
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí rozdílu. 
+   */
 
 void MainWindow::on_pushButton_minus_released()
 {
@@ -130,6 +168,11 @@ void MainWindow::on_pushButton_minus_released()
     }
 }
 
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí násobení. 
+   */
+
 void MainWindow::on_pushButton_multiply_released()
 {
     if(wait_for_operator==true){
@@ -143,6 +186,11 @@ void MainWindow::on_pushButton_multiply_released()
     }
 }
 
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí dělení. 
+   */
+
 void MainWindow::on_pushButton_divide_released()
 {
     if(wait_for_operator==true){
@@ -155,6 +203,11 @@ void MainWindow::on_pushButton_divide_released()
         wait_for_operator=false;
     }
 }
+
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí mocnina. 
+   */
 
 void MainWindow::on_pushButton_power_released()
 {
@@ -173,6 +226,10 @@ void MainWindow::on_pushButton_power_released()
     }
 }
 
+/**
+   * Metoda obsluhu tlačítka po stiskntí odmocnina. 
+   */
+
 void MainWindow::on_pushButton_sqrt_released()
 {
     if(wait_for_operator==true){
@@ -190,6 +247,11 @@ void MainWindow::on_pushButton_sqrt_released()
     }
 }
 
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí faktoriál. 
+   */
+
 void MainWindow::on_pushButton_factorial_released(){
     if(wait_for_operator==true){
         if(calc_operator == none ){
@@ -205,6 +267,12 @@ void MainWindow::on_pushButton_factorial_released(){
 
     }
 }
+
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí y-tá mocnina. 
+   */
+
 void MainWindow::on_pushButton_power_y_released(){
     if(wait_for_operator==true){
         if(calc_operator != none ){
@@ -216,6 +284,12 @@ void MainWindow::on_pushButton_power_y_released(){
         wait_for_operator=false;
     }
 }
+
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí y-tá odmocnina. 
+   */
+
 void MainWindow::on_pushButton_sqrt_y_released(){
     if(wait_for_operator==true){
         if(calc_operator != none ){
@@ -227,6 +301,11 @@ void MainWindow::on_pushButton_sqrt_y_released(){
         wait_for_operator=false;
     }
 }
+
+/**
+   * Metoda obsluhu tlačítka po stiskntí vyčistění. 
+   */
+
 void MainWindow::on_pushButton_clear_released()
 {
     ui->label->clear();
