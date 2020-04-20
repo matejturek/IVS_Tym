@@ -1,3 +1,10 @@
+/**
+  * @file mainwindow.h
+  * @author Jakub Kolb, Matej Turek
+  * @brief Library for mainwindow.cpp
+  */
+
+
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
