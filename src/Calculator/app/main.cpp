@@ -1,3 +1,10 @@
+/**
+  * @file main.cpp
+  * @author Jakub Kolb, Matej Turek
+  * @brief Hlavní funkce programu
+  */
+
+
 #include "mainwindow.h"
 #include <QApplication>
 
