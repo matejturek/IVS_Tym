@@ -24,7 +24,6 @@ test-compile: math_lib-compile $(PROJ-NAME)/$(TEST)/tst_math_lib_test.cpp
 
 profile-compile: math_lib-compile $(PROJ-NAME)/$(PROF)/main.cpp
 	cd $(PROJ-NAME)/$(PROF) && qmake -qt=qt5 $(PROF).pro && make
-	#cd $(PROJ-NAME)/$(PROF) && g++ -Wall -Wextra -g -pg ./main.cpp -o $(PROF)
 
 math_lib-compile: $(PROJ-NAME)/$(MATH)/$(MATH).cpp $(PROJ-NAME)/$(MATH)/$(MATH).h
 	cd $(PROJ-NAME)/$(MATH) && qmake -qt=qt5 $(MATH).pro && make
@@ -33,7 +32,7 @@ run:
 	cd $(PROJ-NAME)/$(APP) && ./$(APP)
 
 pack: clean
-	cd ../.. && zip -r xturek05 doc install repo && mv xturek05.zip xturek05
+	cd ../../.. && zip -r xturek05_xkolbj00_xsladk07_xkluci01 xturek05_xkolbj00_xsladk07_xkluci01
 
 clean:
 	git clean -xdf && rm -f ../../xturek05
