@@ -1,7 +1,7 @@
 /**
   * @file main.cpp
   * @author Jakub Kolb, Matej Turek
-  * @brief Hlavní funkce programu
+  * @brief Main fuction of program
   */
 
 

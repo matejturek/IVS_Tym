@@ -1,7 +1,7 @@
 /**
   * @file mainwindow.cpp
   * @author Jakub Kolb, Matej Turek
-  * @brief Hlavní okno programu
+  * @brief Main window of program
   */
 
 
@@ -49,7 +49,7 @@ MainWindow::~MainWindow()
     dot = false;
 }
  /**
-   * Metoda obsluhu tlačítek po stisknutí. Podle aktuálního stavu mění stav displayu (vyčistí nebo vypisuje čísla) 
+   * Function for button press. According to actual state it changes text on display (clears or write numbers) 
    */
 
 void MainWindow::digit_pressed()
@@ -67,12 +67,12 @@ void MainWindow::digit_pressed()
     dot = false;
 }
 
- /**
-   * Metoda výpočtu. Podle zvolené operace zavolá operaci na výpočet výsledku. Výsledek náledně vypíše na display. 
+ /** 
+   * Function of calculation. According to choosen operation it calculates the result and changes text on display
    *
-   * @param op Zvolená operace (například součet, rozdíl, ...)
-   * @param x První číslo operace
-   * @param y Druhý číslo operace
+   * @param op Choosen operation (například addition, substraction, ...)
+   * @param x First number
+   * @param y Second number
    */
 
 
@@ -100,7 +100,7 @@ void MainWindow::calc(en_operator op, double x, double y)
 
 
  /**
-   * Metoda obsluhu tlačítka po stiskntí desetinný čárky. 
+   * Function for dot (decimal number). 
    */
 
 void MainWindow::on_pushButton_dot_released()
@@ -114,7 +114,7 @@ void MainWindow::on_pushButton_dot_released()
 }
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí výpočtu. 
+   * Function for equality button. 
    */
 
 
@@ -134,7 +134,7 @@ void MainWindow::on_pushButton_equal_released()
 }
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí součtu. 
+   * Function for addition button. 
    */
 
 
@@ -152,7 +152,7 @@ void MainWindow::on_pushButton_plus_released()
 }
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí rozdílu. 
+   * Function for substraction button. 
    */
 
 void MainWindow::on_pushButton_minus_released()
@@ -170,7 +170,7 @@ void MainWindow::on_pushButton_minus_released()
 
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí násobení. 
+   * Function for multiply button. 
    */
 
 void MainWindow::on_pushButton_multiply_released()
@@ -188,7 +188,7 @@ void MainWindow::on_pushButton_multiply_released()
 
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí dělení. 
+   * Function for divide button. 
    */
 
 void MainWindow::on_pushButton_divide_released()
@@ -206,7 +206,7 @@ void MainWindow::on_pushButton_divide_released()
 
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí mocnina. 
+   * Function for power button. 
    */
 
 void MainWindow::on_pushButton_power_released()
@@ -227,7 +227,7 @@ void MainWindow::on_pushButton_power_released()
 }
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí odmocnina. 
+   * Function for square button. 
    */
 
 void MainWindow::on_pushButton_sqrt_released()
@@ -249,7 +249,7 @@ void MainWindow::on_pushButton_sqrt_released()
 
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí faktoriál. 
+   * Function for factorial button. 
    */
 
 void MainWindow::on_pushButton_factorial_released(){
@@ -269,8 +269,8 @@ void MainWindow::on_pushButton_factorial_released(){
 }
 
 
-/**
-   * Metoda obsluhu tlačítka po stiskntí y-tá mocnina. 
+/** 
+   * Function for y power button.  
    */
 
 void MainWindow::on_pushButton_power_y_released(){
@@ -287,7 +287,7 @@ void MainWindow::on_pushButton_power_y_released(){
 
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí y-tá odmocnina. 
+   * Function for y square button.
    */
 
 void MainWindow::on_pushButton_sqrt_y_released(){
@@ -303,7 +303,7 @@ void MainWindow::on_pushButton_sqrt_y_released(){
 }
 
 /**
-   * Metoda obsluhu tlačítka po stiskntí vyčistění. 
+   * Function for clear button.  
    */
 
 void MainWindow::on_pushButton_clear_released()
