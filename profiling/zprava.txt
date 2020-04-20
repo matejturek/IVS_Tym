@@ -1,0 +1,10 @@
+The profiling process executed too fast too decide what parts were taking most
+of the computation time. However we can still judge parts for optimilization based
+on the number of calls made for each function.
+
+There are only two outstanders by the amount of calls in math_lib.h, which are methods
+addtion() and power().
+
+Expect these two methods mentioned above, the profiling shows a lot of calls on vector's
+methods, the container of choice for our implementation. With this knowledge it may
+be fruitful to try use different container to optimilizate this program.
