@@ -1,7 +1,7 @@
 /**
   * @file tst_math_lib_test.cpp
   * @author David Sladký
-  * @brief Tests for math_lib.
+  * @details Tests for math_lib.
   */
 
 #include <QtTest>
@@ -9,7 +9,7 @@
 
 /**
  * @class math_lib_test
- * @brief The math_lib_test class
+ * @brief Class for testing math_lib.h
  */
 class math_lib_test : public QObject
 {
@@ -75,8 +75,8 @@ math_lib_test::~math_lib_test()
 }
 
 /**
- * @test 5 + 4
- * @brief A math_lib.addtion() test
+ * @brief 5 + 4
+ * @details A math_lib.addtion() test
  */
 void math_lib_test::addition1()
 {
@@ -86,7 +86,7 @@ void math_lib_test::addition1()
 
 /**
  * @brief 0 + 0
- * @brief A math_lib.addtion() test
+ * @details A math_lib.addtion() test
  */
 void math_lib_test::addition2()
 {
@@ -95,8 +95,8 @@ void math_lib_test::addition2()
 }
 
 /**
- * @test -99 999 + 2
- * @brief A math_lib.addtion() test
+ * @brief -99 999 + 2
+ * @details A math_lib.addtion() test
  */
 void math_lib_test::addition3()
 {
@@ -105,8 +105,8 @@ void math_lib_test::addition3()
 }
 
 /**
- * @test -7 + -42
- * @brief A math_lib.addtion() test
+ * @brief -7 + -42
+ * @details A math_lib.addtion() test
  */
 void math_lib_test::addition4()
 {
@@ -115,8 +115,8 @@ void math_lib_test::addition4()
 }
 
 /**
- * @test 66 + 100
- * @brief A math_lib.addtion() test
+ * @brief 66 + 100
+ * @details A math_lib.addtion() test
  */
 void math_lib_test::addition5()
 {
@@ -125,8 +125,8 @@ void math_lib_test::addition5()
 }
 
 /**
- * @test 5 - 4
- * @brief A math_lib.subtraction() test
+ * @brief 5 - 4
+ * @details A math_lib.subtraction() test
  */
 void math_lib_test::subtraction1()
 {
@@ -135,8 +135,8 @@ void math_lib_test::subtraction1()
 }
 
 /**
- * @test 0 - 0
- * @brief A math_lib.subtraction() test
+ * @brief 0 - 0
+ * @details A math_lib.subtraction() test
  */
 void math_lib_test::subtraction2()
 {
@@ -145,8 +145,8 @@ void math_lib_test::subtraction2()
 }
 
 /**
- * @test -99 999 - 2
- * @brief A math_lib.subtraction() test
+ * @brief -99 999 - 2
+ * @details A math_lib.subtraction() test
  */
 void math_lib_test::subtraction3()
 {
@@ -155,8 +155,8 @@ void math_lib_test::subtraction3()
 }
 
 /**
- * @test -7 - -42
- * @brief A math_lib.subtraction() test
+ * @brief -7 - -42
+ * @details A math_lib.subtraction() test
  */
 void math_lib_test::subtraction4()
 {
@@ -165,8 +165,8 @@ void math_lib_test::subtraction4()
 }
 
 /**
- * @test 66 - 100
- * @brief A math_lib.subtraction() test
+ * @brief 66 - 100
+ * @details A math_lib.subtraction() test
  */
 void math_lib_test::subtraction5()
 {
@@ -175,8 +175,8 @@ void math_lib_test::subtraction5()
 }
 
 /**
- * @test 5 / 4
- * @brief A math_lib.division() test
+ * @brief 5 / 4
+ * @details A math_lib.division() test
  */
 void math_lib_test::division1()
 {
@@ -185,8 +185,8 @@ void math_lib_test::division1()
 }
 
 /**
- * @test 0 / 0
- * @brief A math_lib.division() test
+ * @brief 0 / 0
+ * @details A math_lib.division() test
  */
 void math_lib_test::division2()
 {
@@ -195,8 +195,8 @@ void math_lib_test::division2()
 }
 
 /**
- * @test -99 999 / 2
- * @brief A math_lib.division() test
+ * @brief -99 999 / 2
+ * @details A math_lib.division() test
  */
 void math_lib_test::division3()
 {
@@ -205,8 +205,8 @@ void math_lib_test::division3()
 }
 
 /**
- * @test -7 / -42
- * @brief A math_lib.division() test
+ * @brief -7 / -42
+ * @details A math_lib.division() test
  */
 void math_lib_test::division4()
 {
@@ -215,8 +215,8 @@ void math_lib_test::division4()
 }
 
 /**
- * @test 66 / 100
- * @brief A math_lib.division() test
+ * @brief 66 / 100
+ * @details A math_lib.division() test
  */
 void math_lib_test::division5()
 {
@@ -225,8 +225,8 @@ void math_lib_test::division5()
 }
 
 /**
- * @test 5 * 4
- * @brief A math_lib.multiplication() test
+ * @brief 5 * 4
+ * @details A math_lib.multiplication() test
  */
 void math_lib_test::multiplication1()
 {
@@ -235,8 +235,8 @@ void math_lib_test::multiplication1()
 }
 
 /**
- * @test 42 * 0
- * @brief A math_lib.multiplication() test
+ * @brief 42 * 0
+ * @details A math_lib.multiplication() test
  */
 void math_lib_test::multiplication2()
 {
@@ -245,8 +245,8 @@ void math_lib_test::multiplication2()
 }
 
 /**
- * @test -99 999 * 2
- * @brief A math_lib.multiplication() test
+ * @brief -99 999 * 2
+ * @details A math_lib.multiplication() test
  */
 void math_lib_test::multiplication3()
 {
@@ -255,7 +255,8 @@ void math_lib_test::multiplication3()
 }
 
 /**
- * @brief A math_lib.multiplication() test
+ * @brief -7 * -42
+ * @details A math_lib.multiplication() test
  */
 void math_lib_test::multiplication4()
 {
@@ -264,8 +265,8 @@ void math_lib_test::multiplication4()
 }
 
 /**
- * @test 66 * 100
- * @brief A math_lib.multiplication() test
+ * @brief 66 * 100
+ * @details A math_lib.multiplication() test
  */
 void math_lib_test::multiplication5()
 {
@@ -274,8 +275,8 @@ void math_lib_test::multiplication5()
 }
 
 /**
- * @test -5!
- * @brief A math_lib.factorial() test
+ * @brief -5!
+ * @details A math_lib.factorial() test
  */
 void math_lib_test::factorial1()
 {
@@ -284,8 +285,8 @@ void math_lib_test::factorial1()
 }
 
 /**
- * @test 1!
- * @brief A math_lib.factorial() test
+ * @brief 1!
+ * @details A math_lib.factorial() test
  */
 void math_lib_test::factorial2()
 {
@@ -294,8 +295,8 @@ void math_lib_test::factorial2()
 }
 
 /**
- * @test 161!
- * @brief A math_lib.factorial() test
+ * @brief 161!
+ * @details A math_lib.factorial() test
  */
 void math_lib_test::factorial3()
 {
@@ -304,8 +305,8 @@ void math_lib_test::factorial3()
 }
 
 /**
- * @test 10!
- * @brief A math_lib.factorial() test
+ * @brief 10!
+ * @details A math_lib.factorial() test
  */
 void math_lib_test::factorial4()
 {
@@ -314,8 +315,8 @@ void math_lib_test::factorial4()
 }
 
 /**
- * @test 5!
- * @brief A math_lib.factorial() test
+ * @brief 5!
+ * @details A math_lib.factorial() test
  */
 void math_lib_test::factorial5()
 {
@@ -324,8 +325,8 @@ void math_lib_test::factorial5()
 }
 
 /**
- * @test -5 ^ 0
- * @brief A math_lib.power() test
+ * @brief -5 ^ 0
+ * @details A math_lib.power() test
  */
 void math_lib_test::power1()
 {
@@ -334,8 +335,8 @@ void math_lib_test::power1()
 }
 
 /**
- * @test 1 ^ 1
- * @brief A math_lib.power() test
+ * @brief 1 ^ 1
+ * @details A math_lib.power() test
  */
 void math_lib_test::power2()
 {
@@ -344,8 +345,8 @@ void math_lib_test::power2()
 }
 
 /**
- * @test 3 ^ -5
- * @brief A math_lib.power() test
+ * @brief 3 ^ -5
+ * @details A math_lib.power() test
  */
 void math_lib_test::power3()
 {
@@ -354,8 +355,8 @@ void math_lib_test::power3()
 }
 
 /**
- * @test 10 ^ 10
- * @brief A math_lib.power() test
+ * @brief 10 ^ 10
+ * @details A math_lib.power() test
  */
 void math_lib_test::power4()
 {
@@ -364,8 +365,8 @@ void math_lib_test::power4()
 }
 
 /**
- * @test 5 ^ 2
- * @brief A math_lib.power() test
+ * @brief 5 ^ 2
+ * @details A math_lib.power() test
  */
 void math_lib_test::power5()
 {
@@ -374,8 +375,8 @@ void math_lib_test::power5()
 }
 
 /**
- * @test -5 ^ 1/-2
- * @brief A math_lib.root() test
+ * @brief -5 ^ 1/-2
+ * @details A math_lib.root() test
  */
 void math_lib_test::root1()
 {
@@ -384,8 +385,8 @@ void math_lib_test::root1()
 }
 
 /**
- * @test 1 ^ 1/1
- * @brief A math_lib.root() test
+ * @brief 1 ^ 1/1
+ * @details A math_lib.root() test
  */
 void math_lib_test::root2()
 {
@@ -394,8 +395,8 @@ void math_lib_test::root2()
 }
 
 /**
- * @test 3 ^ 1/2
- * @brief A math_lib.root() test
+ * @brief 3 ^ 1/2
+ * @details A math_lib.root() test
  */
 void math_lib_test::root3()
 {
@@ -404,8 +405,8 @@ void math_lib_test::root3()
 }
 
 /**
- * @test 10 ^ 1/10
- * @brief A math_lib.root() test
+ * @brief 10 ^ 1/10
+ * @details A math_lib.root() test
  */
 void math_lib_test::root4()
 {
@@ -414,8 +415,8 @@ void math_lib_test::root4()
 }
 
 /**
- * @test 27 ^ 1/3
- * @brief A math_lib.root() test
+ * @brief 27 ^ 1/3
+ * @details A math_lib.root() test
  */
 void math_lib_test::root5()
 {
