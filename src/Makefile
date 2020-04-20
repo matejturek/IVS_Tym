@@ -14,7 +14,7 @@ test: test-compile
 	cd $(PROJ-NAME)/$(TEST) && ./$(TEST)
 
 doc:
-	echo 'TO DO doc'
+	doxygen Doxyfile
 
 app-compile: math_lib-compile
 	cd $(PROJ-NAME)/$(APP) && qmake -qt=qt5 $(APP).pro && make
@@ -33,7 +33,7 @@ run:
 	cd $(PROJ-NAME)/$(APP) && ./$(APP)
 
 pack: clean
-	cd ../.. && zip -r xturek05 doc install repo
+	cd ../.. && zip -r xturek05 doc install repo && mv xturek05.zip xturek05
 
 clean:
 	git clean -xdf && rm -f ../../xturek05
