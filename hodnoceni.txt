@@ -1,4 +1,4 @@
 xkluci01 100 (installator)
-xkolbj00 100 (GUI, functions)
+xkolbj00 100 (GUI, functions, math library)
 xsladk07 100 (profiling, makefile, tests, doxygen)
-xturek0 100 (GUI, functions)
+xturek0 100 (GUI, functions, math library)
