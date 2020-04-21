@@ -46,4 +46,5 @@ pack: clean
 	cd ../../.. && zip -r xturek05_xkolbj00_xsladk07_xkluci01 xturek05_xkolbj00_xsladk07_xkluci01
 
 clean:
-	git clean -xdf && rm -f ../../xturek05
+	git clean -xdf
+	rm -f ../../../xturek05_xkolbj00_xsladk07_xkluci01.zip
