@@ -32,6 +32,7 @@ run:
 	cd $(PROJ-NAME)/$(APP) && ./$(APP)
 
 install: app-compile
+	apt install qt5-default
 	install Manual/calculator-ivs.desktop /usr/share/applications/
 	install -m 0775 Calculator/app/app /usr/bin/calculator-ivs
 	install Manual/calculator.xpm /usr/share/pixmaps
