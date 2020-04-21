@@ -27,6 +27,7 @@ Termíny:
         Profiling
         Makefile
         Doxygen
+		Uživatelská příručka
 
 	Kľučiar Adam xkluci01:
 		Inštalační balík
